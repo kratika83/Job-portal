@@ -1,0 +1,22 @@
+{
+    "lang_record_found": "Record found",
+    "lang_no_record_found": "No Record found",
+    "lang_invalid_token": "Invalid token",
+    "lang_token_expire": "Token expired",
+    "lang_validate_user_authorized_token": "You are not authorized",
+    "lang_register_success": "Registered successfully",
+    "lang_login_success": "Logged in successfully",
+    "lang_user_register_failure": "User already registered. Please login",
+    "lang_user_update_success": "User has updated",
+    "lang_name_is_required": "Please provide name",
+    "lang_email_is_required": "Please provide email",
+    "lang_password_is_required": "Please provide password",
+    "lang_missing_field": "Please provide all fields",
+    "lang_invalid_credentials": "Invalid username or password",
+    "lang_job_create_success": "Job created successfully",
+    "lang_no_jobs_found": "No jobs found with this id",
+    "lang_unauthorize_update_job": "You are not authorize to update the job",
+    "lang_unauthorize_delete_job": "You are not authorize to delete the job",
+    "lang_job_update_success": "Job updated successfully",
+    "lang_job_delete_success": "Job deleted successfully"
+}
