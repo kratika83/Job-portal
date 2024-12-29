@@ -30,8 +30,34 @@ const updateUser = async (req, res) => {
     }
 };
 
+const getUser = async (req, res) => {
+    try {
+        const user = await userModel.findById({ _id: req.body.user_info._id });
+        user.password = undefined;
+        if (!user) {
+            return helper.returnFalseResponse(
+                req,
+                res,
+                constants.CONST_RESP_CODE_CONTENT_NOT_FOUND,
+                i18n.__('lang_user_not_found')
+            )
+        } else {
+            return helper.returnTrueResponse(
+                req,
+                res,
+                constants.CONST_RESP_CODE_OK,
+                i18n.__('lang_user_found'),
+                { data: user }
+            )
+        }
+    } catch (error) {
+        return helper.returnFalseResponse(req, res, constants.CONST_RESP_CODE_INTERNAL_SERVER_ERROR, error.message)
+    }
+};
+
 let userController = {
-    updateUser: updateUser
+    updateUser: updateUser,
+    getUser: getUser
 };
 
 export default userController;

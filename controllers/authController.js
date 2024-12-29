@@ -88,7 +88,7 @@ const login = async (req, res) => {
             )
         }
 
-        user.password =undefined;
+        user.password = undefined;
         const token = await helper.jwtToken(user);
         return helper.returnTrueResponse(
             req,

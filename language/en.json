@@ -18,5 +18,7 @@
     "lang_unauthorize_update_job": "You are not authorize to update the job",
     "lang_unauthorize_delete_job": "You are not authorize to delete the job",
     "lang_job_update_success": "Job updated successfully",
-    "lang_job_delete_success": "Job deleted successfully"
+    "lang_job_delete_success": "Job deleted successfully",
+    "lang_user_not_found": "User not found",
+    "lang_user_found": "User found"
 }
